@@ -1,0 +1,11 @@
+.div-loader{
+    color:white; 
+    display: flex; 
+    justify-content:center;
+    align-items:center; 
+    width: 100vw;
+    height: 100vh;
+    min-height: 200px;
+    padding: 1rem;
+
+}
