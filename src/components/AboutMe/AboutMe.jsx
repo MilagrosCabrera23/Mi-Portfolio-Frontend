@@ -2,7 +2,7 @@ import "./AboutMe.css";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
 import {FaGithub,FaLinkedin,FaDownload,} from "react-icons/fa";
-import perfilAnime from "../../assets/img/perfilAnime.webp";
+import perfilAnime from "../../assets/img/perfilanime.webp";
 
 const AboutMeComponent = () => {
   return (
