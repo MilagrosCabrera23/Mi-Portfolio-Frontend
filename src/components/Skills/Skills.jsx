@@ -19,6 +19,7 @@ import {
     SiMysql,
     SiPostgresql,
     SiFastapi,
+    SiKanban
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
