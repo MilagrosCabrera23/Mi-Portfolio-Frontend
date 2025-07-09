@@ -19,7 +19,7 @@ import {
     SiMysql,
     SiPostgresql,
     SiFastapi,
-    SiKanban
+    SiTrello
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -117,10 +117,6 @@ const SkillsComponent = () => {
                                 <FaGithub className="tech-icon-circle" />
                                 <small className="tech-label">GitHub</small>
                             </div>
-                            <div className="tech-item" role="img" aria-label="Kanban">
-                                <SiKanban className="tech-icon-circle" />
-                                <small className="tech-label">Kanban</small>
-                            </div>
                             <div className="tech-item" role="img" aria-label="Bootstrap">
                                 <SiBootstrap className="tech-icon-circle" />
                                 <small className="tech-label">Bootstrap</small>
@@ -147,6 +143,10 @@ const SkillsComponent = () => {
                             <div className="tech-item" role="img" aria-label="Scrum">
                                 <SiScrumalliance className="tech-icon-circle" />
                                 <small className="tech-label">Scrum</small>
+                            </div>
+                              <div className="tech-item" role="img" aria-label="Kanban">
+                                <SiTrello className="tech-icon-circle" />
+                                <small className="tech-label">Kanban</small>
                             </div>
                         </div>
                     </div>
