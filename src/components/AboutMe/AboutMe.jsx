@@ -1,12 +1,16 @@
 import "./AboutMe.css";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
-import {FaGithub,FaLinkedin,FaDownload,} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import perfilAnime from "../../assets/img/perfilanime.webp";
 
 const AboutMeComponent = () => {
   return (
-    <Container className="about-container" id="sobre-mi" aria-labelledby="sobre-mi-title">
+    <Container
+      className="about-container"
+      id="sobre-mi"
+      aria-labelledby="sobre-mi-title"
+    >
       <Row className="row-about align-items-center flex-column flex-md-row">
         {/* Columna de texto */}
         <Col md={6} className="text-start">
@@ -16,23 +20,33 @@ const AboutMeComponent = () => {
             transition={{ duration: 0.9 }}
           >
             <h2 className="title-about">Sobre Mi</h2>
+            {/* Imagen (solo en mobile) */}
+            <div className="d-md-none text-center my-4">
+              <motion.img
+                src={perfilAnime}
+                alt="foto de perfil animada"
+                className="imagen-about"
+                whileHover={{ scale: [1, 1.1, 1.2] }}
+                transition={{ duration: 0.5 }}
+              />
+            </div>
+
             <p className="subtitle-about">
               ¡Hola! Soy{" "}
               <strong className="strong-about">Milagros Cabrera</strong>, aunque
               prefiero que me llamen{" "}
               <strong className="strong-about">Magui</strong>. Soy una
               desarrolladora Full Stack apasionada por crear soluciones
-              tecnológicas innovadoras y amante del café ☕.
-    
-              Mi enfoque se centra en el desarrollo de aplicaciones web modernas
-              y escalables, combinando las mejores prácticas de frontend y
-              backend.
-        
+              tecnológicas innovadoras y amante del café ☕. Mi enfoque se
+              centra en el desarrollo de aplicaciones web modernas y escalables,
+              combinando las mejores prácticas de frontend y backend.
+            </p>
+
+            <p className="subtitle-about">
               Me destaco por mi capacidad para aprender rápidamente nuevas
-              tecnologías y mi compromiso con la calidad del código.
-       
-              También podés conocer más sobre mí en mis redes profesionales o
-              descargar mi CV:
+              tecnologías y mi compromiso con la calidad del código. También
+              podés conocer más sobre mí en mis redes profesionales o descargar
+              mi CV:
             </p>
 
             <div className="button-redes gap-3 d-flex flex-wrap">
@@ -71,26 +85,15 @@ const AboutMeComponent = () => {
           <motion.img
             src={perfilAnime}
             loading="lazy"
-           alt="Ilustración animada del perfil de Milagros Cabrera"
+            alt="Ilustración animada del perfil de Milagros Cabrera"
             className="imagen-about"
             whileHover={{ scale: [1, 1.1, 1.2] }}
             transition={{ duration: 0.5 }}
           />
         </Col>
-
-        {/* Imagen (solo en mobile) */}
-        <div className="d-md-none text-center my-4">
-          <motion.img
-            src={perfilAnime}
-            alt="foto de perfil animada"
-            className="imagen-about"
-            whileHover={{ scale: [1, 1.1, 1.2] }}
-            transition={{ duration: 0.5 }}
-          />
-        </div>
       </Row>
     </Container>
   );
 };
 
-export default AboutMeComponent; 
+export default AboutMeComponent;

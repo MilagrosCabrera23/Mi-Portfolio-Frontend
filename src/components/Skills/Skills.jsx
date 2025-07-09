@@ -116,6 +116,10 @@ const SkillsComponent = () => {
                                 <FaGithub className="tech-icon-circle" />
                                 <small className="tech-label">GitHub</small>
                             </div>
+                            <div className="tech-item" role="img" aria-label="Kanban">
+                                <SiKanban className="tech-icon-circle" />
+                                <small className="tech-label">Kanban</small>
+                            </div>
                             <div className="tech-item" role="img" aria-label="Bootstrap">
                                 <SiBootstrap className="tech-icon-circle" />
                                 <small className="tech-label">Bootstrap</small>

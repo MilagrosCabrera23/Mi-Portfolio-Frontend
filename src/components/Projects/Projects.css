@@ -84,7 +84,8 @@
 .img-proyectos {
   width: 100%;
   max-width: 300px;
-  aspect-ratio: 4 / 3; 
+  height: auto;
+  margin:0 auto; 
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }

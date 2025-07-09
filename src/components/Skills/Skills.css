@@ -7,7 +7,8 @@
     max-width: 75rem;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
+    padding: 0.95rem;
+     margin-top: 2rem;
 }
 
 .title-skills {
@@ -68,8 +69,9 @@
 
 @media (min-width: 220px) and (max-width: 640px) {
     .skills-container {
-        padding: 2rem 1rem 2rem; 
+        padding: 2rem 0; 
         min-height: auto; 
+        margin-top: 2rem;
     }
 
     .title-skills {

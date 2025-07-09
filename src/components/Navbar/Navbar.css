@@ -16,10 +16,10 @@
   color: #e1f4ff;
   font-weight: 700;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 .titles {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #fff;
@@ -28,10 +28,10 @@
 
 @media (min-width: 360px) and (max-width: 780px) {
   .logo-navbar {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   .div-titles .titles {
-    font-size: 0.8em;
+    font-size: 1rem;
   }
 }
 
