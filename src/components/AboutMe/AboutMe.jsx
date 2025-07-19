@@ -2,7 +2,7 @@ import "./AboutMe.css";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
-import perfilAnime from "../../assets/img/perfilanime.webp";
+import perfil from "../../assets/img/perfil.webp";
 
 const AboutMeComponent = () => {
   return (
@@ -23,8 +23,8 @@ const AboutMeComponent = () => {
             {/* Imagen (solo en mobile) */}
             <div className="d-md-none text-center my-4">
               <motion.img
-                src={perfilAnime}
-                alt="foto de perfil animada"
+                src={perfil}
+                alt="foto de perfil de Cabrera Milagros"
                 className="imagen-about"
                 whileHover={{ scale: [1, 1.1, 1.2] }}
                 transition={{ duration: 0.5 }}
@@ -37,7 +37,9 @@ const AboutMeComponent = () => {
               prefiero que me llamen{" "}
               <strong className="strong-about">Magui</strong>. Soy una
               desarrolladora Full Stack apasionada por crear soluciones
-              tecnológicas innovadoras y amante del café ☕. Mi enfoque se
+              tecnológicas innovadoras y amante del café ☕.</p>
+              
+              <p className="subtitle-about">Mi enfoque se
               centra en el desarrollo de aplicaciones web modernas y escalables,
               combinando las mejores prácticas de frontend y backend.
             </p>
@@ -69,7 +71,8 @@ const AboutMeComponent = () => {
                 <FaLinkedin className="me-2" /> LinkedIn
               </a>
               <a
-                href="/cv-milagros-cabrera.docx"
+                href="/cv/MilagrosCabrera-Full-stack.pdf"
+                target="_blank"
                 download
                 aria-label="Descargar CV de Milagros Cabrera"
                 className="btn btn-cv"
@@ -83,9 +86,9 @@ const AboutMeComponent = () => {
         {/* Imagen (solo en desktop) */}
         <Col md={6} className="text-center d-none d-md-block">
           <motion.img
-            src={perfilAnime}
+            src={perfil}
             loading="lazy"
-            alt="Ilustración animada del perfil de Milagros Cabrera"
+            alt="foto del perfil de Milagros Cabrera"
             className="imagen-about"
             whileHover={{ scale: [1, 1.1, 1.2] }}
             transition={{ duration: 0.5 }}

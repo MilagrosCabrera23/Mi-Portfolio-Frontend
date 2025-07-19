@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Entornos
+.env
+
+# Build
+dist/
+build/
+
+# Config VSCode
+.vscode/
+
+# Archivos del sistema
+.DS_Store

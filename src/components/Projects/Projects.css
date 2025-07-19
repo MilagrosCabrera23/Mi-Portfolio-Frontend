@@ -73,7 +73,9 @@
   font-size: 1rem;
   font-weight: 500;
 }
-
+.btn:hover {
+  background-color:none;
+}
 .btn-github {
  background-color: #e913b3;  
   color: white;

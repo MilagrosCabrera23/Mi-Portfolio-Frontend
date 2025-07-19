@@ -77,7 +77,7 @@ const ProjectsComponent = () => {
                       </span>
                     ))}
                     <a
-                      href={proyecto.linkGithub}
+                      href={proyecto.link_github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-github d-flex align-items-center gap-2"
