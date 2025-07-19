@@ -1,5 +1,4 @@
 import "./Background.css";
-import backgroundVideo from "../../assets/videos/fondo_animado.mp4";
 
 const BackgroundComponent = () => {
 
@@ -17,7 +16,7 @@ const BackgroundComponent = () => {
         aria-hidden="true"
         poster=""
       >
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src="/videos/fondo_animado.mp4" type="video/mp4" />
         Tu navegador no soporta el elemento video.
       </video>
        <div className="video-overlay" />

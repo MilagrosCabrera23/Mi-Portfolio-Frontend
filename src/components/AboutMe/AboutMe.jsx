@@ -2,7 +2,6 @@ import "./AboutMe.css";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
-import perfil from "../../assets/img/perfil.webp";
 
 const AboutMeComponent = () => {
   return (
@@ -23,7 +22,7 @@ const AboutMeComponent = () => {
             {/* Imagen (solo en mobile) */}
             <div className="d-md-none text-center my-4">
               <motion.img
-                src={perfil}
+                src="/img/perfil.webp"
                 alt="foto de perfil de Cabrera Milagros"
                 className="imagen-about"
                 whileHover={{ scale: [1, 1.1, 1.2] }}
@@ -86,7 +85,7 @@ const AboutMeComponent = () => {
         {/* Imagen (solo en desktop) */}
         <Col md={6} className="text-center d-none d-md-block">
           <motion.img
-            src={perfil}
+            src="/img/perfil.webp"
             loading="lazy"
             alt="foto del perfil de Milagros Cabrera"
             className="imagen-about"
