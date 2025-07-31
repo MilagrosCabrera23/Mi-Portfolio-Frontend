@@ -19,7 +19,9 @@ import {
     SiMysql,
     SiPostgresql,
     SiFastapi,
-    SiTrello
+    SiTrello,
+    SiPostman, 
+    SiDocker 
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -121,6 +123,15 @@ const SkillsComponent = () => {
                                 <SiBootstrap className="tech-icon-circle" />
                                 <small className="tech-label">Bootstrap</small>
                             </div>
+                            <div className="tech-item" role="img" aria-label="Postman">
+                                <SiPostman className="tech-icon-circle" />                 
+                                <small className="tech-label">Postman</small>
+                            </div>
+                            <div className="tech-item" role="img" aria-label="Docker">
+                                <SiDocker className="tech-icon-circle" />
+                                <small className="tech-label">Docker</small>
+                            </div>
+
                         </div>
                     </div>
                 </Col>
